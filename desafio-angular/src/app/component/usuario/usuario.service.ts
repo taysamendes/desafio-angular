@@ -20,7 +20,7 @@ export class UsuarioService {
     return this.http.get<Usuario[]>(this.apiUrl)
   }
 
-  readById(id: string): Observable<Usuario> {
+  readById(id: any): Observable<Usuario> {
     const url = `${this.apiUrl}/${id}`
     return this.http.get<Usuario>(url)
   }

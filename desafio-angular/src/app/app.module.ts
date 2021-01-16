@@ -11,6 +11,7 @@ import { UsuarioCreateComponent } from './component/usuario/usuario-create/usuar
 import {HttpClientModule} from '@angular/common/http';
 import { UsuarioReadComponent } from './component/usuario/usuario-read/usuario-read.component';
 import { UsuarioUpdateComponent } from './component/usuario/usuario-update/usuario-update.component';
+import { UsuarioDeleteComponent } from './component/usuario/usuario-delete/usuario-delete.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UsuarioUpdateComponent } from './component/usuario/usuario-update/usuar
     NavComponent,
     UsuarioCreateComponent,
     UsuarioReadComponent,
-    UsuarioUpdateComponent
+    UsuarioUpdateComponent,
+    UsuarioDeleteComponent
   ],
   imports: [
     BrowserModule,
