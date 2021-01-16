@@ -23,7 +23,8 @@
               <input type="senha" class="form-control" id="senha" placeholder="Senha"
               [(ngModel)]="usuario.senha" name="senha">
             </div>
-            <button type="button" class="btn btn-primary" (click)="createUsuario()">Salvar usuário</button>
+            <button type="submit" class="btn btn-primary" (click)="createUsuario()">Salvar usuário</button>
+            <button type="button" class="btn btn-secondary" (click)="cancelar()">Cancelar</button>
         </form>
 
 </div>

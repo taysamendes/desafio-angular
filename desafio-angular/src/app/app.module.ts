@@ -9,6 +9,7 @@ import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.componen
 import { NavComponent } from './component/template/nav/nav.component';
 import { UsuarioCreateComponent } from './component/usuario/usuario-create/usuario-create.component';
 import {HttpClientModule} from '@angular/common/http';
+import { UsuarioReadComponent } from './component/usuario/usuario-read/usuario-read.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HttpClientModule} from '@angular/common/http';
     HomeComponent,
     UsuarioCrudComponent,
     NavComponent,
-    UsuarioCreateComponent
+    UsuarioCreateComponent,
+    UsuarioReadComponent
   ],
   imports: [
     BrowserModule,

@@ -27,6 +27,10 @@ export class UsuarioCreateComponent implements OnInit {
       this.router.navigate(['/usuarios'])
     })
   }
+  
+  cancelar(): void {
+    this.router.navigate(['/usuarios'])
+  }
 
   
 }
