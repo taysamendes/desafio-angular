@@ -29,7 +29,7 @@ export class UsuarioCreateComponent implements OnInit {
     })
   }
   
-  cancelar(): void {
+  cancel(): void {
     this.router.navigate(['/usuarios'])
   }
 

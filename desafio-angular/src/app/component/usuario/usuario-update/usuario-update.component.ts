@@ -28,7 +28,6 @@ export class UsuarioUpdateComponent implements OnInit {
   ngOnInit(): void {
 
     const id = this.route.snapshot.paramMap.get('id');
-    console.log(typeof(id))
     this.usuarioService.readById(id).subscribe((usuario) => {
       this.usuario = usuario
     });
