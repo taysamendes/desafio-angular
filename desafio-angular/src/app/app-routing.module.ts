@@ -6,6 +6,7 @@ import {UsuarioCrudComponent} from "./views/usuario-crud/usuario-crud.component"
 import { UsuarioCreateComponent } from './component/usuario/usuario-create/usuario-create.component';
 import { UsuarioUpdateComponent } from './component/usuario/usuario-update/usuario-update.component';
 import { UsuarioDeleteComponent } from './component/usuario/usuario-delete/usuario-delete.component';
+import { HistoricoCrudComponent } from './views/historico-crud/historico-crud.component';
 
 const routes: Routes = [
   {
@@ -27,7 +28,11 @@ const routes: Routes = [
   {
     path: "usuarios/delete/:id",
     component: UsuarioDeleteComponent
-  }
+  },
+  {
+    path: "historico",
+    component: HistoricoCrudComponent
+  },
 ];
 
 @NgModule({

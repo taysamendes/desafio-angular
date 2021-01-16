@@ -12,6 +12,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { UsuarioReadComponent } from './component/usuario/usuario-read/usuario-read.component';
 import { UsuarioUpdateComponent } from './component/usuario/usuario-update/usuario-update.component';
 import { UsuarioDeleteComponent } from './component/usuario/usuario-delete/usuario-delete.component';
+import { HistoricoCrudComponent } from './views/historico-crud/historico-crud.component';
+import { HistoricoReadComponent } from './component/historico/historico-read/historico-read.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { UsuarioDeleteComponent } from './component/usuario/usuario-delete/usuar
     UsuarioCreateComponent,
     UsuarioReadComponent,
     UsuarioUpdateComponent,
-    UsuarioDeleteComponent
+    UsuarioDeleteComponent,
+    HistoricoCrudComponent,
+    HistoricoReadComponent
   ],
   imports: [
     BrowserModule,
