@@ -11,6 +11,7 @@ import { UsuarioService } from '../usuario.service';
 export class UsuarioCreateComponent implements OnInit {
 
   usuario: Usuario = {
+    id:  0,
     email: '',
     login: '',
     nome: '',

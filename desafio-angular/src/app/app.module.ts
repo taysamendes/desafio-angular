@@ -10,6 +10,7 @@ import { NavComponent } from './component/template/nav/nav.component';
 import { UsuarioCreateComponent } from './component/usuario/usuario-create/usuario-create.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UsuarioReadComponent } from './component/usuario/usuario-read/usuario-read.component';
+import { UsuarioUpdateComponent } from './component/usuario/usuario-update/usuario-update.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UsuarioReadComponent } from './component/usuario/usuario-read/usuario-r
     UsuarioCrudComponent,
     NavComponent,
     UsuarioCreateComponent,
-    UsuarioReadComponent
+    UsuarioReadComponent,
+    UsuarioUpdateComponent
   ],
   imports: [
     BrowserModule,
