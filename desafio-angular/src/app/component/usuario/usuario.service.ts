@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import {Usuario} from './Usuario.model'
+import {Usuario} from './usuario.model'
 
 @Injectable({
   providedIn: 'root'
@@ -20,10 +20,13 @@ export class UsuarioService {
     return this.http.get<Usuario[]>(this.apiUrl)
   }
 
-  update(usuario: Usuario): Observable<Usuario> {
-    const url = `${this.apiUrl}/${usuario.id}`
+  readById(id: string): Observable<Usuario> {
+    const url = `${this.apiUrl}/${id}`
     return this.http.get<Usuario>(url)
   }
 
-
+  update(usuario: Usuario): Observable<Usuario> {
+    const url = `${this.apiUrl}/${usuario.id}`
+    return this.http.put<Usuario>(url, usuario)
+  }
 }

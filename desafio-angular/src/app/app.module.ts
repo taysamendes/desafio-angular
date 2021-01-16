@@ -27,7 +27,7 @@ import { UsuarioUpdateComponent } from './component/usuario/usuario-update/usuar
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
